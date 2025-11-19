@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : PrintEven
+//  Description :   It is used to print N number of even numbers on screen
+//  Auther :        Diksha Kadu Vispute
+//  Date :          17/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void PrintEven(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 2; iCnt <= (iNo*2); iCnt++)
+    {
+        if((iCnt % 2) == 0)
+        {
+            printf("%d\n",iCnt);
+        }
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter the value :\n");
+    scanf("%d",&iValue);
+
+    PrintEven(iValue);
+
+    return 0;
+}
